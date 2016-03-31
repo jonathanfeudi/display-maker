@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+    .frame{
+      background-color:blue;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>ContentTools test</title>
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+  </head>
+  <body>
+    <div id="controlPanel">
+      <button id="unlockButton">Unlock Frames</button>
+      <button id="lockButton">Lock Frames</button>
+      <br>
+      <input type="number" placeholder="height (pixels)" id="heightInput">
+      <input type="number" placeholder="width (pixels)" id="widthInput">
+      <button id="frameButton">Create a new frame</button>
+      <br>
+      <input type="number" id="gridInput"placeholder="grid size(pixels)">
+      <button id="gridButton">Enable Snap to Grid</button>
+    </div>
+    <div data-editable data-name="main-content" id="container">
+    </div>
+    <!-- <script src="js/content-tools.js"></script>
+    <script src="js/editor.js"></script> -->
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
