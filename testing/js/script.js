@@ -18,12 +18,24 @@ function roundOff(position, grid){
 };
 
 function normalizeSnap(ind, el){
-  el.style.top = roundOff(el.style.top.split('px')[0], gridIncrement)+'px';
-  el.style.left = roundOff(el.style.left.split('px')[0], gridIncrement)+'px';
+  el.style.top = roundOff(el.style.top.split('px')[0], parseInt(gridIncrement))+'px';
+  el.style.left = roundOff(el.style.left.split('px')[0], parseInt(gridIncrement))+'px';
 };
+
+function vacuumPack(){
+  $("#frame"+($("#frameSelect").val())).width($("#frameImage"+($("#frameSelect").val())).width()+"px");
+  $("#frame"+($("#frameSelect").val())).height($("#frameImage"+($("#frameSelect").val())).height()+"px");
+};
+
+$("#vacuumPack").click(vacuumPack);
 
 $("#madsButton").click(function(){
   $("#frame0").append("<div class=frameContent><img id=madsPic src=img/mads.jpg></div>");
+});
+
+$("#loadImage").click(function(){
+  $("#frame"+($("#frameSelect").val())).append("<div class=frameContent><img id=frameImage"+($("#frameSelect").val())+" src="+($("#imgInput").val())+"></div>")
+  $("#imgInput").val('');
 });
 
 $("#frameContentResize").click(function(){
@@ -71,6 +83,7 @@ $("#frameButton").click(function(){
     $("#container").append("<div id=frame"+frameCount+" style=height:"+$("#heightInput").val()+"px;width:"+$("#widthInput").val()+"px; class=frame></div>");
     $("#frame"+frameCount).draggable();
     $("#frame"+frameCount).resizable();
+    $("#frameSelect").append("<option value="+frameCount+">Frame "+frameCount+"</option>")
     frameCount ++;
     $("#heightInput").val('');
     $("#widthInput").val('');
@@ -81,6 +94,7 @@ $("#testFrame").click(function(){
   $("#container").append("<div id=frame"+frameCount+" style=height:100px;width:100px; class=frame></div>");
   $("#frame"+frameCount).draggable();
   $("#frame"+frameCount).resizable();
+  $("#frameSelect").append("<option value="+frameCount+">Frame "+(frameCount+1)+"</option>")
   frameCount ++;
 });
 
@@ -96,7 +110,7 @@ $("#unlockButton").click(function(){
 });
 
 $("#lockButton").click(function(){
-  $( ".frame" ).draggable({
+  $(".frame").draggable({
     disabled: true
   });
 });

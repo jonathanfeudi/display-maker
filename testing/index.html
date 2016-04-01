@@ -11,6 +11,7 @@
     <div id="controlPanel">
       <button id="unlockButton">Unlock Frames Drag</button>
       <button id="lockButton">Lock Frames Drag</button>
+      <button id="vacuumPack">Fit Frame to Image</button>
       <br>
       <button id="frameContentDrag">Unlock Frame Content Drag</button>
       <button id="frameContentLock">Lock Frame Content Drag</button>
@@ -21,11 +22,15 @@
       <input type="number" placeholder="width (pixels)" id="widthInput">
       <button id="frameButton">Create a new frame</button>
       <button id="testFrame">Create Test Frame</button>
-      <button id="tinyRick">Create Tiny Rick</button>
       <button id="madsButton">Create Mads</button>
       <br>
-      <input type="number" id="gridInput"placeholder="grid size(pixels)">
+      <input type="number" id="gridInput" placeholder="grid size(pixels)">
       <button id="gridButton">Enable Snap to Grid</button>
+      <br>
+      <select id="frameSelect" multiple=true>
+      </select>
+      <input type="text" id="imgInput" placeholder="Image URL">
+      <button id="loadImage">Add Image to Frame</button>
     </div>
     <div id="container">
     </div>
