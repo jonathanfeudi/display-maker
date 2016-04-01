@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <style>
-    .frame{
-      background-color:blue;
-    }
-  </style>
   <meta charset="utf-8">
   <title>ContentTools test</title>
   <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -14,21 +9,26 @@
   </head>
   <body>
     <div id="controlPanel">
-      <button id="unlockButton">Unlock Frames</button>
-      <button id="lockButton">Lock Frames</button>
+      <button id="unlockButton">Unlock Frames Drag</button>
+      <button id="lockButton">Lock Frames Drag</button>
+      <br>
+      <button id="frameContentDrag">Unlock Frame Content Drag</button>
+      <button id="frameContentLock">Lock Frame Content Drag</button>
+      <button id="frameContentResize">Enable Frame Content Resize (maintains aspect ratio)</button>
+      <button id="frameContentResizeLock">Disable Frame Content Resize</button>
       <br>
       <input type="number" placeholder="height (pixels)" id="heightInput">
       <input type="number" placeholder="width (pixels)" id="widthInput">
       <button id="frameButton">Create a new frame</button>
       <button id="testFrame">Create Test Frame</button>
+      <button id="tinyRick">Create Tiny Rick</button>
+      <button id="madsButton">Create Mads</button>
       <br>
       <input type="number" id="gridInput"placeholder="grid size(pixels)">
       <button id="gridButton">Enable Snap to Grid</button>
     </div>
-    <div data-editable data-name="main-content" id="container">
+    <div id="container">
     </div>
-    <!-- <script src="js/content-tools.js"></script>
-    <script src="js/editor.js"></script> -->
     <script src="js/jquery-ui.js"></script>
     <script src="js/script.js"></script>
   </body>

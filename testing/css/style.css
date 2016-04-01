@@ -4,4 +4,8 @@
 
 .frame {
   position: absolute;
+  border-radius: 1px;
+  border-style: solid;
+  border-color: black;
+  overflow: hidden;
 }
