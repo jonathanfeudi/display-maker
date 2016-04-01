@@ -3,8 +3,9 @@ $(document).ready(function(){
 });
 
 var frameCount = 0;
+var gridIncrement = 0;
 
-function roundSnap(position, grid){
+function roundOff(position, grid){
   var remainder = position % grid;
   var afterSnap = position - remainder;
   if (((afterSnap + grid) - position) < (position - afterSnap)){
@@ -12,6 +13,11 @@ function roundSnap(position, grid){
   } else {
     return afterSnap;
   }
+};
+
+function normalizeSnap(ind, el){
+  el.style.top = roundOff(el.style.top.split('px')[0], gridIncrement)+'px';
+  el.style.left = roundOff(el.style.left.split('px')[0], gridIncrement)+'px';
 };
 
 $("#frameButton").click(function(){
@@ -25,7 +31,16 @@ $("#frameButton").click(function(){
   }
 });
 
+$("#testFrame").click(function(){
+  $("#container").append("<div id=frame"+frameCount+" style=height:100px;width:100px; class=frame>frame</div>");
+  $("#frame"+frameCount).draggable();
+  $("#frame"+frameCount).resizable();
+  frameCount ++;
+});
+
 $("#gridButton").click(function(){
+  gridIncrement = $("#gridInput").val();
+  $(".frame").each(normalizeSnap);
   $(".frame").draggable( "option", "grid", [$("#gridInput").val(), $("#gridInput").val()]);
   $("#gridInput").val('');
 })
