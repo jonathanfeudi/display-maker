@@ -4,8 +4,18 @@
 
 .frame {
   position: absolute;
-  border-radius: 1px;
+  border-width: 3px;
   border-style: solid;
   border-color: black;
   overflow: hidden;
+}
+
+.selectedFrame{
+  border-color: blue;
+  border-width: 3px;
+  border-style: solid;
+}
+
+#frameSelect{
+  width: 75px;
 }

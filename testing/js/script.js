@@ -7,6 +7,12 @@ var gridIncrement = 0;
 var frameContentDragLocked;
 var frameContentResizeLocked;
 
+//http://stackoverflow.com/questions/1144783/replacing-all-occurrences-of-a-string-in-javascript
+
+function replaceAll(str, find, replace) {
+  return str.replace(new RegExp(find, 'g'), replace);
+};
+
 function roundOff(position, grid){
   var remainder = position % grid;
   var afterSnap = position - remainder;
@@ -27,7 +33,14 @@ function vacuumPack(){
   $("#frame"+($("#frameSelect").val())).height($("#frameImage"+($("#frameSelect").val())).height()+"px");
 };
 
-$("#vacuumPack").click(vacuumPack);
+function trimHTML(){
+  $(".frame").draggable("destroy");
+  $(".frame").resizable("destroy");
+  $(".ui-wrapper").resizable("destroy");
+  $(".frameContent").draggable("destroy");
+};
+
+$("#vacuumSeal").click(vacuumPack);
 
 $("#madsButton").click(function(){
   $("#frame0").append("<div class=frameContent><img id=madsPic src=img/mads.jpg></div>");
@@ -36,6 +49,10 @@ $("#madsButton").click(function(){
 $("#loadImage").click(function(){
   $("#frame"+($("#frameSelect").val())).append("<div class=frameContent><img id=frameImage"+($("#frameSelect").val())+" src="+($("#imgInput").val())+"></div>")
   $("#imgInput").val('');
+});
+
+$("#nameFrame").click(function(){
+  $("#option"+$("#frameSelect").val()).text($("#frameName").val());
 });
 
 $("#frameContentResize").click(function(){
@@ -83,7 +100,7 @@ $("#frameButton").click(function(){
     $("#container").append("<div id=frame"+frameCount+" style=height:"+$("#heightInput").val()+"px;width:"+$("#widthInput").val()+"px; class=frame></div>");
     $("#frame"+frameCount).draggable();
     $("#frame"+frameCount).resizable();
-    $("#frameSelect").append("<option value="+frameCount+">Frame "+frameCount+"</option>")
+    $("#frameSelect").append("<option id=option"+frameCount+"value="+frameCount+">Frame "+frameCount+"</option>")
     frameCount ++;
     $("#heightInput").val('');
     $("#widthInput").val('');
@@ -94,8 +111,13 @@ $("#testFrame").click(function(){
   $("#container").append("<div id=frame"+frameCount+" style=height:100px;width:100px; class=frame></div>");
   $("#frame"+frameCount).draggable();
   $("#frame"+frameCount).resizable();
-  $("#frameSelect").append("<option value="+frameCount+">Frame "+(frameCount+1)+"</option>")
+  $("#frameSelect").append("<option id=option"+frameCount+" value="+frameCount+">Frame "+(frameCount+1)+"</option>")
   frameCount ++;
+});
+
+$("#frameSelect").on('change',function(){
+  $(".frame").removeClass("selectedFrame");
+  $("#frame"+($("#frameSelect").val()[0])).attr("class", $("#frame"+($("#frameSelect").val()[0])).attr("class")+" selectedFrame");
 });
 
 $("#gridButton").click(function(){
@@ -103,7 +125,7 @@ $("#gridButton").click(function(){
   $(".frame").each(normalizeSnap);
   $(".frame").draggable( "option", "grid", [$("#gridInput").val(), $("#gridInput").val()]);
   $("#gridInput").val('');
-})
+});
 
 $("#unlockButton").click(function(){
   $(".frame").draggable("enable");
@@ -113,4 +135,19 @@ $("#lockButton").click(function(){
   $(".frame").draggable({
     disabled: true
   });
+});
+
+$("#generateHTML").click(function(){
+  try {
+    trimHTML();
+    var reduction =$("#container")[0].innerHTML;
+    var firstRender = replaceAll(reduction, '>', '&gt;');
+    var secondRender = replaceAll(firstRender, '<', '&lt;');
+    $("#deliciousReduction").append(secondRender);
+  } catch(e) {
+    var reduction =$("#container")[0].innerHTML;
+    var firstRender = replaceAll(reduction, '>', '&gt;');
+    var secondRender = replaceAll(firstRender, '<', '&lt;');
+    $("#deliciousReduction").append(secondRender);
+  }
 });
