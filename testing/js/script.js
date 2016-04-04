@@ -9,7 +9,7 @@ var frameContentResizeLocked;
 
 //http://stackoverflow.com/questions/1144783/replacing-all-occurrences-of-a-string-in-javascript
 
-function replaceAll(str, find, replace) {
+function replaceAll(str, find, replace){
   return str.replace(new RegExp(find, 'g'), replace);
 };
 

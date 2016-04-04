@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       session[:current_user_id] = @user.id
-      redirect_to tables_path
+      redirect_to displays_path
     else
       redirect_to new_user_path
     end

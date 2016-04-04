@@ -1,0 +1,10 @@
+<div class="form">
+  <h1>Create Thine Display</h1>
+  <%= form_for @display do |f| %>
+  <%= f.label :display_name %><br>
+  <%= f.text_field :display_name %><br>
+  <%= f.submit "Save Display" %><br>
+  <%= f.hidden_field(:user_id, :value => session[:current_user_id]) %>
+  <%= f.hidden_field(:html_string) %>
+  <% end %>
+</div>
