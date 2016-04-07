@@ -26,6 +26,7 @@ class DisplaysController < ApplicationController
     end
   end
 
+
   def edit
     @display = Display.find(params[:id])
   end
@@ -34,6 +35,12 @@ class DisplaysController < ApplicationController
     @display = Display.find(params[:id])
     @display.update(display_params)
     redirect_to display_path(@display)
+  end
+
+  def destroy
+    @display = Display.find(params[:id])
+    @display.destroy
+    redirect_to displays_path
   end
 
   def display_params

@@ -7,7 +7,7 @@ $(document).ready(function(){
   $("#frameContentResizeLock").click(disableContentResize);
   $("#frameContentDrag").click(enableContentDrag);
   $("#frameContentLock").click(disableContentDrag);
-  $("#createFrame").click(createFrame);
+  $(".createFrame").click(createFrame);
   $("#deleteFrame").click(deleteFrame);
   $("#frameSelect").on('change', frameSelect);
   $("#gridButton").click(snapToGrid);
@@ -19,6 +19,7 @@ $(document).ready(function(){
   $("#borderColor").click(setBorderColor);
   $("#frameToolsButton").click(showFrameTools); $("#selectionToolsButton").click(showSelectionTools);
   $("#userToolsButton").click(showUserTools);
+  $("#backgroundColor").click(setBackgroundColor);
   appInitialization();
   prepLoadedDisplay();
 });
@@ -29,6 +30,7 @@ var frameContentDragLocked;
 var frameContentResizeLocked;
 var borderWidthInitialized;
 var borderColorInitialized;
+var backgroundColorInitialized;
 
 //http://stackoverflow.com/questions/1144783/replacing-all-occurrences-of-a-string-in-javascript
 
@@ -39,7 +41,7 @@ function replaceAll(str, find, replace){
 function appInitialization(){
   showFrameTools();
   $("#controlPanel").draggable();
-  $("#controlPanel").attr("style", "left: 450px; top: 125px;")
+  $("#controlPanel").attr("style", "left: 850px; top: 10px;")
   $("#unlockButton").hide();
   $("#frameContentLock").hide();
   $("#frameContentResizeLock").hide();
@@ -118,11 +120,15 @@ function setBorderWidth(ind, el){
 
 function setBorderColor(ind, el){
   if (borderColorInitialized){
-    $(".frame").each(function(ind,el){el.style["border-color"]="#"+$(".jscolor").val()});
+    $(".frame").each(function(ind,el){el.style["border-color"]="#"+$("#borderColorInput").val()});
   } else {
     $("#frameSelect").children().each(function(ind, el){var x = $("#frame"+el.id.split("option")[1]).attr("style"); $("#frame"+el.id.split("option")[1]).attr("style", x+" border-color:#"+$(".jscolor").val())});
     borderColorInitialized = true;
   }
+};
+
+function setBackgroundColor(){
+  $("body").attr("style", "background-color: #"+$("#backgroundColorInput").val());
 };
 
 function vacuumPack(){
@@ -139,8 +145,12 @@ function trimHTML(){
 };
 
 function loadImage(){
-  $("#frame"+($("#frameSelect").val())).append("<div class=frameContent><img id=frameImage"+($("#frameSelect").val())+" src="+($("#imgInput").val())+"></div>")
-  $("#imgInput").val('');
+  if ($("#frameSelect").val()){
+    $("#frame"+($("#frameSelect").val())).append("<div class=frameContent><img id=frameImage"+($("#frameSelect").val())+" src="+($("#imgInput").val())+"></div>")
+    $("#imgInput").val('');
+  } else {
+    window.alert("You must select a frame to place your image inside.")
+  }
 };
 
 function nameFrame(){

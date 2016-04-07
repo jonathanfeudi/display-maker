@@ -1,32 +1,28 @@
-<div class="form">
-  <h1>Edit Your Display</h1>
-  <h3>Note: Make sure to save your changes before you generate your HTML! Otherwise bad things happen!</h3>
-  <%= form_for @display do |f| %>
-  <%= f.label :display_name %><br>
-  <%= f.text_field :display_name, :value => @display.display_name %>
-  <button id="formSubmit">Save Display</button>
-  <%= f.hidden_field(:user_id, :value => session[:current_user_id]) %>
-  <%= f.hidden_field(:html_string) %>
-  <% end %>
-  <button id="generateHTML">Generate HTML</button>
-</div>
+<h1>Edit Your Display</h1>
+<h3>Note: Make sure to save your changes before you generate your HTML! Otherwise bad things happen!</h3>
 <div id="controlPanel">
-  Control Panel! Drag me!
-  <br>
-  Tabs:
-  <button id="frameToolsButton">Frame Tools</button>
-  <button id="selectionToolsButton">Selection Tools</button>
+  <div id="controlHeader">
+    Control Panel! Drag me!
+  </div>
+  <div id="controlTabs">
+    Tabs:
+    <button id="frameToolsButton">Frame Tools</button>
+    <button id="selectionToolsButton">Selection Tools</button>
+    <button id="userToolsButton">User Tools</button>
+  </div>
   <div id="frameTools">
-    <button id="createFrame">Create Frame</button>
+    These actions affect ALL frames.
+    <br>
+    <button class="createFrame">Create Frame</button>
     <br>
     <button id="unlockButton">Unlock Frames Drag</button>
     <button id="lockButton">Lock Frames In Place</button>
     <br>
-    <button id="frameContentDrag">Unlock Frame Content Drag</button>
-    <button id="frameContentLock">Lock Frame Content Drag</button>
+    <button id="frameContentDrag">Unlock Image Drag</button>
+    <button id="frameContentLock">Lock Image Drag</button>
     <br>
-    <button id="frameContentResize">Enable Frame Content Resize</button>
-    <button id="frameContentResizeLock">Disable Frame Content Resize</button>
+    <button id="frameContentResize">Enable Image Resize</button>
+    <button id="frameContentResizeLock">Disable Image Resize</button>
     <br>
     <input type="number" id="gridInput" placeholder="grid size(pixels)">
     <button id="gridButton">Enable Snap to Grid</button>
@@ -34,10 +30,17 @@
     <input type="number" id="borderWidthInput" placeholder="border width(pixels)">
     <button id="borderWidth">Set Border Width</button>
     <br>
-    <input class="jscolor" value="ab2567">
+    <input class="jscolor" id="borderColorInput" value="ab2567">
     <button id="borderColor">Set Border Color</button>
+    <br>
+    <input class="jscolor" id="backgroundColorInput" value="3746AB">
+    <button id="backgroundColor">Set Background Color</button>
   </div>
   <div id="selectionTools">
+    These actions ONLY affect the selected frame.
+    <br>
+    <button class="createFrame">Create Frame</button>
+    <br>
     <select id="frameSelect" multiple=true>
     </select>
     <br>
@@ -50,6 +53,20 @@
     <button id="loadImage">Add Image to Frame</button>
     <br>
     <button id="deleteFrame">Delete Selected Frame</button>
+  </div>
+  <div id="userTools">
+    <div class="form">
+      <br>
+      <%= form_for @display do |f| %>
+      <%= f.label :display_name %><br>
+      <%= f.text_field :display_name %>
+      <button id="formSubmit">Save Display</button>
+      <%= f.hidden_field(:user_id, :value => session[:current_user_id]) %>
+      <%= f.hidden_field(:html_string) %>
+      <% end %>
+      <br>
+      <button id="generateHTML">Generate HTML</button>
+    </div>
   </div>
 </div>
 <%= @display.html_string.html_safe %>
