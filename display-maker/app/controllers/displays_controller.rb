@@ -44,7 +44,7 @@ class DisplaysController < ApplicationController
   end
 
   def display_params
-    params.require(:display).permit(:display_name, :html_string, :user_id)
+    params.require(:display).permit(:display_name, :html_string, :user_id, :frame_names, :background_color)
   end
 
 end

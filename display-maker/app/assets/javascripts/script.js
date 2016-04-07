@@ -83,6 +83,9 @@ function prepLoadedDisplay(){
     $("#frame"+frameNumber).resizable();
     frameCount++;
   }
+  for (var i = 0; i < $("#frameSelect").children().length; i++){
+    $("#frameSelect").children()[i].text = $("#frameNames").text().split(',')[i+1].split($("#frameSelect").children()[i].value)[1]
+  }
 };
 
 function roundOff(position, grid){
@@ -155,6 +158,8 @@ function loadImage(){
 
 function nameFrame(){
   $("#option"+$("#frameSelect").val()).text($("#frameName").val());
+  var value = $("#display_frame_names").val();
+  $("#display_frame_names").val(value+","+$("#frameSelect").val()+$("#frameName").val());
 };
 
 function enableContentResize(){
@@ -210,10 +215,10 @@ function disableContentDrag(){
 };
 
 function createFrame(){
-  $("#container").append("<div id=frame"+frameCount+" style=height:100px;width:100px; class=frame></div>");
-  $("#frame"+frameCount).draggable();
-  $("#frame"+frameCount).resizable();
-  $("#frameSelect").append("<option id=option"+frameCount+" value="+frameCount+">Frame "+(frameCount+1)+"</option>");
+  $("#container").append("<div id=frame"+(parseInt($("#frameSelect").children().last().val())+1)+" style=height:100px;width:100px; class=frame></div>");
+  $("#frame"+(parseInt($("#frameSelect").children().last().val())+1)).draggable();
+  $("#frame"+(parseInt($("#frameSelect").children().last().val())+1)).resizable();
+  $("#frameSelect").append("<option id=option"+(parseInt($("#frameSelect").children().last().val())+1)+" value="+(parseInt($("#frameSelect").children().last().val())+1)+">Frame "+(frameCount+1)+"</option>");
   frameCount++;
 };
 

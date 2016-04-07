@@ -53,6 +53,7 @@
     <button id="loadImage">Add Image to Frame</button>
     <br>
     <button id="deleteFrame">Delete Selected Frame</button>
+    <p id="frameNames" hidden><%= @display.frame_names %></p>
   </div>
   <div id="userTools">
     <div class="form">
@@ -60,9 +61,10 @@
       <%= form_for @display do |f| %>
       <%= f.label :display_name %><br>
       <%= f.text_field :display_name %>
-      <button id="formSubmit">Save Display</button>
       <%= f.hidden_field(:user_id, :value => session[:current_user_id]) %>
       <%= f.hidden_field(:html_string) %>
+      <%= f.hidden_field(:frame_names) %>
+      <button id="formSubmit">Save Display</button>
       <% end %>
       <br>
       <button id="generateHTML">Generate HTML</button>
