@@ -5,7 +5,11 @@ class DisplaysController < ApplicationController
   end
 
   def show
+    @user = User.find(session[:current_user_id])
     @display = Display.find(params[:id])
+    if @user.id != @display.user_id
+      redirect_to displays_path
+    end
   end
 
   def new

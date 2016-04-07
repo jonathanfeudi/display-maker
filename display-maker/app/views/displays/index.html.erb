@@ -1,0 +1,10 @@
+<h2>
+  <%= link_to "Create a New Display", new_display_path %>
+</h2>
+<% @displays.where(:user_id => session[:current_user_id]).each do |display| %>
+<h3>
+  <%= display.display_name %>
+  <%= link_to "Edit", display_path(display) %>
+  <%= link_to "Destroy", display_path(display), method: :delete %>
+</h3>
+<% end %>

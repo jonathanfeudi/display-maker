@@ -10,8 +10,9 @@
   <div class="login">
     <% if session[:current_user_id] %>
     <h1>Welcome Back</h1>
-    <%= link_to "#{User.find(session[:current_user_id]).username}", user_path(session[:current_user_id]) %> ||
+    <%= "Logged in as: ""#{User.find(session[:current_user_id]).username}" %> ||
     <%= link_to "Logout", sessions_path, method: :delete %> ||
+    <%= link_to "My Displays", displays_path %>
     <% else %>
     <h1>Sign in Here</h1>
     <% #TODO what's a form_tag for %>

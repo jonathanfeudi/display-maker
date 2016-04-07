@@ -1,6 +1,6 @@
 class Display < ActiveRecord::Base
   belongs_to :user
 
-  validates :name, :html_string, presence:true
+  validates :display_name, :html_string, presence:true
 
 end

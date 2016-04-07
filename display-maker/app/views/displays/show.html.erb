@@ -1,13 +1,13 @@
 <div class="form">
-  <h1>Create Thine Display</h1>
+  <h1>Edit Thine Display</h1>
   <h3>Note: If you wish to save your display and edit it later, be sure to SAVE it before you Generate your HTML!</h3>
   <%= form_for @display do |f| %>
   <%= f.label :display_name %><br>
-  <%= f.text_field :display_name %><br>
+  <%= f.text_field :display_name, :value => @display.display_name %>
+  <button id="formSubmit">Save Display</button>
   <%= f.hidden_field(:user_id, :value => session[:current_user_id]) %>
   <%= f.hidden_field(:html_string) %>
   <% end %>
-  <button id="formSubmit">Save Display</button>
 </div>
 <div id="controlPanel">
   <button id="createFrame">Create Frame</button>
@@ -41,7 +41,6 @@
   <button id="loadImage">Add Image to Frame</button>
   <button id="deleteFrame">Delete Selected Frame</button>
 </div>
-<div id="container">
-</div>
+<%= @display.html_string.html_safe %>
 <div id="deliciousReduction">
 </div>
