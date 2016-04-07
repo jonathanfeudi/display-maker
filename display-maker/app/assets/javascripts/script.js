@@ -17,6 +17,9 @@ $(document).ready(function(){
   $("#formSubmit").click(saveDisplay);
   $("#borderWidth").click(setBorderWidth);
   $("#borderColor").click(setBorderColor);
+  $("#frameToolsButton").click(showFrameTools); $("#selectionToolsButton").click(showSelectionTools);
+  $("#userToolsButton").click(showUserTools);
+  appInitialization();
   prepLoadedDisplay();
 });
 
@@ -31,6 +34,33 @@ var borderColorInitialized;
 
 function replaceAll(str, find, replace){
   return str.replace(new RegExp(find, 'g'), replace);
+};
+
+function appInitialization(){
+  showFrameTools();
+  $("#controlPanel").draggable();
+  $("#controlPanel").attr("style", "left: 450px; top: 125px;")
+  $("#unlockButton").hide();
+  $("#frameContentLock").hide();
+  $("#frameContentResizeLock").hide();
+};
+
+function showFrameTools(){
+  $("#selectionTools").hide();
+  $("#userTools").hide();
+  $("#frameTools").show();
+};
+
+function showUserTools(){
+  $("#selectionTools").hide();
+  $("#frameTools").hide();
+  $("#userTools").show();
+};
+
+function showSelectionTools(){
+  $("#selectionTools").show();
+  $("#userTools").hide();
+  $("#frameTools").hide();
 };
 
 function saveDisplay(){
@@ -120,9 +150,13 @@ function nameFrame(){
 function enableContentResize(){
   if (frameContentResizeLocked){
     frameContentResizeLocked = false;
+    $("#frameContentResize").hide();
+    $("#frameContentResizeLock").show();
     $(".frameContent").children(["<img>"]).resizable("enable")
   } else {
     frameContentResizeLocked = false;
+    $("#frameContentResize").hide();
+    $("#frameContentResizeLock").show();
     $(".frameContent").children(["<img>"]).resizable({
       aspectRatio:true
     })
@@ -132,6 +166,8 @@ function enableContentResize(){
 function disableContentResize(){
   if (frameContentResizeLocked == false){
     frameContentResizeLocked = true;
+    $("#frameContentResize").show();
+    $("#frameContentResizeLock").hide();
     $(".frameContent").children(["<img>"]).resizable({
       disabled:true
     })
@@ -142,15 +178,21 @@ function enableContentDrag(){
   if (frameContentDragLocked){
     frameContentDragLocked = false;
     $(".frameContent").draggable("enable");
+    $("#frameContentDrag").hide();
+    $("#frameContentLock").show();
   } else {
     frameContentDragLocked = false;
     $(".frameContent").draggable();
+    $("#frameContentDrag").hide();
+    $("#frameContentLock").show();
   }
 };
 
 function disableContentDrag(){
   if (frameContentDragLocked == false){
     frameContentDragLocked = true;
+    $("#frameContentLock").hide();
+    $("#frameContentDrag").show();
     $(".frameContent").draggable({
       disabled:true
     })
@@ -177,10 +219,14 @@ function frameSelect(){
 
 function enableFrameDrag(){
   $(".frame").draggable("enable");
+  $("#unlockButton").hide();
+  $("#lockButton").show();
 };
 
 
 function disableFrameDrag(){
+  $("#unlockButton").show();
+  $("#lockButton").hide()
   $(".frame").draggable({
     disabled: true
   });

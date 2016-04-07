@@ -1,45 +1,61 @@
-<div class="form">
-  <h1>Create Thine Display</h1>
-  <h3>Note: If you wish to save your display and edit it later, be sure to SAVE it before you Generate your HTML!</h3>
-  <%= form_for @display do |f| %>
-  <%= f.label :display_name %><br>
-  <%= f.text_field :display_name %><br>
-  <%= f.hidden_field(:user_id, :value => session[:current_user_id]) %>
-  <%= f.hidden_field(:html_string) %>
-  <% end %>
-  <button id="formSubmit">Save Display</button>
-</div>
+<h1>Create Your Display</h1>
+<h3>Note: If you wish to save your display and edit it later, be sure to SAVE it before you Generate your HTML!</h3>
 <div id="controlPanel">
-  <button id="createFrame">Create Frame</button>
+  Control Panel! Drag me!
   <br>
-  <button id="unlockButton">Unlock Frames Drag</button>
-  <button id="lockButton">Lock Frames Drag</button>
-  <button id="vacuumSeal">Fit Frame to Image</button>
-  <br>
-  <button id="frameContentDrag">Unlock Frame Content Drag</button>
-  <button id="frameContentLock">Lock Frame Content Drag</button>
-  <br>
-  <button id="frameContentResize">Enable Frame Content Resize</button>
-  <button id="frameContentResizeLock">Disable Frame Content Resize</button>
-  <br>
-  <input type="number" id="gridInput" placeholder="grid size(pixels)">
-  <button id="gridButton">Enable Snap to Grid</button>
-  <br>
-  <input type="number" id="borderWidthInput" placeholder="border width(pixels)">
-  <button id="borderWidth">Set Border Width</button>
-  <br>
-  <input class="jscolor" value="ab2567">
-  <button id="borderColor">Set Border Color</button>
-  <br>
-  <button id="generateHTML">Generate HTML</button>
-  <br>
-  <select id="frameSelect" multiple=true>
-  </select>
-  <input type="text" id="frameName" placeholder="Frame Name">
-  <button id="nameFrame">Rename Frame</button>
-  <input type="text" id="imgInput" placeholder="Image URL">
-  <button id="loadImage">Add Image to Frame</button>
-  <button id="deleteFrame">Delete Selected Frame</button>
+  Tabs:
+  <button id="frameToolsButton">Frame Tools</button>
+  <button id="selectionToolsButton">Selection Tools</button>
+  <button id="userToolsButton">User Tools</button>
+  <div id="frameTools">
+    <button id="createFrame">Create Frame</button>
+    <br>
+    <button id="unlockButton">Unlock Frames Drag</button>
+    <button id="lockButton">Lock Frames In Place</button>
+    <br>
+    <button id="frameContentDrag">Unlock Frame Content Drag</button>
+    <button id="frameContentLock">Lock Frame Content Drag</button>
+    <br>
+    <button id="frameContentResize">Enable Frame Content Resize</button>
+    <button id="frameContentResizeLock">Disable Frame Content Resize</button>
+    <br>
+    <input type="number" id="gridInput" placeholder="grid size(pixels)">
+    <button id="gridButton">Enable Snap to Grid</button>
+    <br>
+    <input type="number" id="borderWidthInput" placeholder="border width(pixels)">
+    <button id="borderWidth">Set Border Width</button>
+    <br>
+    <input class="jscolor" value="ab2567">
+    <button id="borderColor">Set Border Color</button>
+  </div>
+  <div id="selectionTools">
+    <select id="frameSelect" multiple=true>
+    </select>
+    <br>
+    <button id="vacuumSeal">Fit Frame to Image</button>
+    <br>
+    <input type="text" id="frameName" placeholder="Frame Name">
+    <button id="nameFrame">Rename Frame</button>
+    <br>
+    <input type="text" id="imgInput" placeholder="Image URL">
+    <button id="loadImage">Add Image to Frame</button>
+    <br>
+    <button id="deleteFrame">Delete Selected Frame</button>
+  </div>
+  <div id="userTools">
+    <div class="form">
+      <br>
+      <%= form_for @display do |f| %>
+      <%= f.label :display_name %><br>
+      <%= f.text_field :display_name %>
+      <button id="formSubmit">Save Display</button>
+      <%= f.hidden_field(:user_id, :value => session[:current_user_id]) %>
+      <%= f.hidden_field(:html_string) %>
+      <% end %>
+      <br>
+      <button id="generateHTML">Generate HTML</button>
+    </div>
+  </div>
 </div>
 <div id="container">
 </div>

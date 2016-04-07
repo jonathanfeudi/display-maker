@@ -1,6 +1,4 @@
-<h2>
-  <%= link_to "Create a New Display", new_display_path %>
-</h2>
+<h2>My Displays</h2>
 <% @displays.where(:user_id => session[:current_user_id]).each do |display| %>
 <h3>
   <%= display.display_name %>

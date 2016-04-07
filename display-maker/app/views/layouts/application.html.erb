@@ -9,22 +9,12 @@
 <body>
   <div class="login">
     <% if session[:current_user_id] %>
-    <h1>Welcome Back</h1>
-    <%= "Logged in as: ""#{User.find(session[:current_user_id]).username}" %> ||
     <%= link_to "Logout", sessions_path, method: :delete %> ||
-    <%= link_to "My Displays", displays_path %>
+    <%= link_to "My Displays", displays_path %> ||
+    <%= link_to "Create a New Display", new_display_path %>
     <% else %>
-    <h1>Sign in Here</h1>
-    <% #TODO what's a form_tag for %>
-    <%= form_tag(sessions_path) do%>
-    <%= label_tag :username %> <br>
-    <%= text_field_tag :username %>
-    <br>
-    <%= label_tag :password %> <br>
-    <%= password_field_tag :password %>
-    <br><br>
-    <%= submit_tag "Login"%>
-    <% end %>
+    <%= link_to "Register/Login", new_user_path %> ||
+    <%= link_to "Create a New Display", new_display_path %>
     <% end %>
   </div>
 <%= yield %>
