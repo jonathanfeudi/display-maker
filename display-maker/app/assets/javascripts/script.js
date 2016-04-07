@@ -41,12 +41,14 @@ function saveDisplay(){
 };
 
 function prepLoadedDisplay(){
+  createBottomMargin();
   for(var i = 0; i < $(".frame").length; i++){
-    $("#frame"+i).draggable();
-    $("#frame"+i).resizable();
-    $("#frame"+i).resizable("destroy");
-    $("#frame"+i).resizable();
     $("#frameSelect").append("<option id=option"+$(".frame")[i].id.split("frame")[1]+" value="+$(".frame")[i].id.split("frame")[1]+">Frame "+(frameCount+1)+"</option>");
+    var frameNumber = $("#frameSelect").children()[i].value;
+    $("#frame"+frameNumber).draggable({drag:function(event, ui){createBottomMargin()}});
+    $("#frame"+frameNumber).resizable();
+    $("#frame"+frameNumber).resizable("destroy");
+    $("#frame"+frameNumber).resizable();
     frameCount++;
   }
 };
@@ -200,6 +202,16 @@ function generateHTML(){
 };
 
 //Weird viewport stuff starts here
+
+function createBottomMargin(){
+  $("body").attr("style", "min-height: "+(findFrameBottomLocations()+100)+"px");
+};
+
+function findFrameBottomLocations(){
+  var frameBottomLocations = [];
+  $(".frame").each(function(ind,el){frameBottomLocations.push($(this).offset().top + (parseInt(el.style.height.split("px")[0])))});
+  return getMaxOfArray(frameBottomLocations);
+};
 
 function getMaxOfArray(numArray) {
   return Math.max.apply(null, numArray);
