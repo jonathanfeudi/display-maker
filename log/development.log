@@ -21898,3 +21898,42 @@ Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3
 
 
 Started GET "/assets/script.self-bf63683115ac43aa2da7960439055ffb893bb84bb2d68680be98ef8ed419e6e3.js?body=1" for ::1 at 2016-04-08 16:51:55 -0400
+
+
+Started GET "/" for ::1 at 2016-04-08 16:56:37 -0400
+Processing by DisplaysController#index as HTML
+  [1m[36mDisplay Load (0.4ms)[0m  [1mSELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/displays" for ::1 at 2016-04-08 16:56:39 -0400
+Processing by DisplaysController#index as HTML
+  [1m[35mDisplay Load (0.3ms)[0m  SELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/displays/new" for ::1 at 2016-04-08 16:56:42 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/displays" for ::1 at 2016-04-08 16:57:00 -0400
+Processing by DisplaysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qRfHQX1oOS+uhuLSMzC5Nb2J/LbHK8AoZOKxffSVwYpZxk0W4fTYmYlWSCrYEUz7LlPZELxR3WFa8pDu9L17kQ==", "display"=>{"display_name"=>"asd,jfhadsjlf", "user_id"=>"1", "html_string"=>"<div id=\"container\">\r\n<div id=\"frameNaN\" style=\"height: 58px; width: 74px;\" class=\"frame ui-draggable ui-draggable-handle ui-resizable\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90;\"></div></div><div id=\"frameNaN\" style=\"height:100px;width:100px;\" class=\"frame\"></div><div id=\"frameNaN\" style=\"height:100px;width:100px;\" class=\"frame\"></div></div>", "frame_names"=>""}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "displays" ("display_name", "html_string", "user_id", "frame_names") VALUES ($1, $2, $3, $4) RETURNING "id"  [["display_name", "asd,jfhadsjlf"], ["html_string", "<div id=\"container\">\r\n<div id=\"frameNaN\" style=\"height: 58px; width: 74px;\" class=\"frame ui-draggable ui-draggable-handle ui-resizable\"><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90;\"></div></div><div id=\"frameNaN\" style=\"height:100px;width:100px;\" class=\"frame\"></div><div id=\"frameNaN\" style=\"height:100px;width:100px;\" class=\"frame\"></div></div>"], ["user_id", 1], ["frame_names", ""]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/displays/4
+Completed 302 Found in 7ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/displays/4" for ::1 at 2016-04-08 16:57:00 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mDisplay Load (0.2ms)[0m  [1mSELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered displays/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.4ms)
