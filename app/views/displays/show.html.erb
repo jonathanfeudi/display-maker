@@ -1,5 +1,4 @@
 <h1>Edit Your Display</h1>
-<h3>Note: Make sure to save your changes before you generate your HTML! Otherwise bad things happen!</h3>
 <div id="controlPanel">
   <div id="controlHeader">
     Control Panel! Drag me!
@@ -75,5 +74,6 @@
   </div>
 </div>
 <%= @display.html_string.html_safe %>
-<div id="deliciousReduction">
-</div>
+<textarea id="deliciousReduction">
+</textarea>
+<button id="copyButton">Copy to Clipboard</button>

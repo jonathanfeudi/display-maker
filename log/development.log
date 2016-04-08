@@ -21292,3 +21292,609 @@ Started GET "/assets/script.self-914a32d5b61598ff7017d0ef43f3733c33f04a60696fcc3
 
 
 Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:56:13 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 15:49:56 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.3ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 223ms (Views: 210.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 15:49:56 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 15:49:56 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 15:49:56 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 15:49:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 15:49:56 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 15:49:56 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 15:49:56 -0400
+
+
+Started GET "/assets/script.self-7d10996346c26dc287f0c71197b6b735e245471390a59b7579d3c344968517a8.js?body=1" for ::1 at 2016-04-08 15:49:56 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 15:49:56 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 15:49:56 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 15:50:16 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 15:50:16 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 15:50:16 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 15:50:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 15:50:16 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 15:50:16 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 15:50:16 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 15:50:16 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 15:50:16 -0400
+
+
+Started GET "/assets/script.self-7d10996346c26dc287f0c71197b6b735e245471390a59b7579d3c344968517a8.js?body=1" for ::1 at 2016-04-08 15:50:16 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 15:50:16 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 15:51:09 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 15:51:09 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 15:51:09 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 15:51:09 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 15:51:09 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 15:51:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 15:51:09 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 15:51:09 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 15:51:09 -0400
+
+
+Started GET "/assets/script.self-7d10996346c26dc287f0c71197b6b735e245471390a59b7579d3c344968517a8.js?body=1" for ::1 at 2016-04-08 15:51:09 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 15:51:09 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 15:52:38 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 15:52:38 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 15:52:38 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 15:52:38 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 15:52:38 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 15:52:38 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 15:52:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 15:52:38 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 15:52:38 -0400
+
+
+Started GET "/assets/script.self-7d10996346c26dc287f0c71197b6b735e245471390a59b7579d3c344968517a8.js?body=1" for ::1 at 2016-04-08 15:52:38 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 15:52:38 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 15:55:50 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 144ms (Views: 142.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 15:55:51 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 15:55:51 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 15:55:51 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 15:55:51 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 15:55:51 -0400
+
+
+Started GET "/assets/script.self-fae09d6ee61ab22b5a03bead23a3ed9e6b1ed4c803483dee7fa41587311a749d.js?body=1" for ::1 at 2016-04-08 15:55:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 15:55:51 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 15:55:51 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 15:55:51 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 15:55:51 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 15:56:17 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 139ms (Views: 137.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 15:56:17 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 15:56:17 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 15:56:17 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 15:56:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 15:56:17 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 15:56:17 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 15:56:17 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 15:56:17 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 15:56:17 -0400
+
+
+Started GET "/assets/script.self-035cabcb1d6933c316c73499600fba816c315a6a2618621047d4f7f847f337d9.js?body=1" for ::1 at 2016-04-08 15:56:17 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 15:56:45 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 145ms (Views: 143.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 15:56:45 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 15:56:45 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 15:56:45 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 15:56:45 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 15:56:45 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 15:56:45 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 15:56:45 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 15:56:45 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 15:56:45 -0400
+
+
+Started GET "/assets/script.self-2b8a098c75a78591982929cb7207995880e0ca3bec8fe051c55903b423b671d5.js?body=1" for ::1 at 2016-04-08 15:56:45 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 16:09:32 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.4ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 44.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 16:09:32 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 16:09:32 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 16:09:32 -0400
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 16:09:32 -0400
+
+
+Started GET "/assets/style.self-cfcd3177fa96c7336a01626957e597020937973201b2569827c6b5f2eb4f335e.css?body=1" for ::1 at 2016-04-08 16:09:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 16:09:32 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:09:32 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 16:09:32 -0400
+
+
+Started GET "/assets/script.self-2b8a098c75a78591982929cb7207995880e0ca3bec8fe051c55903b423b671d5.js?body=1" for ::1 at 2016-04-08 16:09:32 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 16:09:32 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 16:31:37 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/style.self-cfcd3177fa96c7336a01626957e597020937973201b2569827c6b5f2eb4f335e.css?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/script.self-2b8a098c75a78591982929cb7207995880e0ca3bec8fe051c55903b423b671d5.js?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 16:31:37 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 16:44:46 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/style.self-cfcd3177fa96c7336a01626957e597020937973201b2569827c6b5f2eb4f335e.css?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/script.self-2b8a098c75a78591982929cb7207995880e0ca3bec8fe051c55903b423b671d5.js?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/assets/script.self-2b8a098c75a78591982929cb7207995880e0ca3bec8fe051c55903b423b671d5.js?body=1" for ::1 at 2016-04-08 16:44:46 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 16:44:53 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 16:44:53 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 16:44:53 -0400
+
+
+Started GET "/assets/style.self-cfcd3177fa96c7336a01626957e597020937973201b2569827c6b5f2eb4f335e.css?body=1" for ::1 at 2016-04-08 16:44:53 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 16:44:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 16:44:53 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 16:44:53 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 16:44:53 -0400
+
+
+Started GET "/assets/script.self-2b8a098c75a78591982929cb7207995880e0ca3bec8fe051c55903b423b671d5.js?body=1" for ::1 at 2016-04-08 16:44:53 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 16:44:53 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:44:53 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 16:46:18 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 16:46:18 -0400
+
+
+Started GET "/assets/style.self-cfcd3177fa96c7336a01626957e597020937973201b2569827c6b5f2eb4f335e.css?body=1" for ::1 at 2016-04-08 16:46:18 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 16:46:19 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 16:46:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 16:46:19 -0400
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 16:46:19 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 16:46:19 -0400
+
+
+Started GET "/assets/script.self-2b8a098c75a78591982929cb7207995880e0ca3bec8fe051c55903b423b671d5.js?body=1" for ::1 at 2016-04-08 16:46:19 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 16:46:19 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:46:19 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:46:19 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 16:46:54 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 16:46:54 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 16:46:54 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 16:46:54 -0400
+
+
+Started GET "/assets/style.self-cfcd3177fa96c7336a01626957e597020937973201b2569827c6b5f2eb4f335e.css?body=1" for ::1 at 2016-04-08 16:46:54 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 16:46:54 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 16:46:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 16:46:54 -0400
+
+
+Started GET "/assets/script.self-2b8a098c75a78591982929cb7207995880e0ca3bec8fe051c55903b423b671d5.js?body=1" for ::1 at 2016-04-08 16:46:54 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 16:46:54 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:46:55 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 16:47:53 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.self-cfcd3177fa96c7336a01626957e597020937973201b2569827c6b5f2eb4f335e.css?body=1" for ::1 at 2016-04-08 16:47:54 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 16:47:54 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 16:47:54 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 16:47:54 -0400
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 16:47:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 16:47:54 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 16:47:54 -0400
+
+
+Started GET "/assets/script.self-2b8a098c75a78591982929cb7207995880e0ca3bec8fe051c55903b423b671d5.js?body=1" for ::1 at 2016-04-08 16:47:54 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 16:47:54 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:47:54 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 16:51:54 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 140ms (Views: 138.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 16:51:54 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 16:51:54 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 16:51:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 16:51:54 -0400
+
+
+Started GET "/assets/style.self-cfcd3177fa96c7336a01626957e597020937973201b2569827c6b5f2eb4f335e.css?body=1" for ::1 at 2016-04-08 16:51:54 -0400
+
+
+Started GET "/assets/script.self-bf63683115ac43aa2da7960439055ffb893bb84bb2d68680be98ef8ed419e6e3.js?body=1" for ::1 at 2016-04-08 16:51:54 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 16:51:54 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 16:51:54 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 16:51:54 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:51:54 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 16:51:55 -0400
+
+
+Started GET "/assets/script.self-bf63683115ac43aa2da7960439055ffb893bb84bb2d68680be98ef8ed419e6e3.js?body=1" for ::1 at 2016-04-08 16:51:55 -0400

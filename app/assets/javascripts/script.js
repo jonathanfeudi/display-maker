@@ -20,6 +20,7 @@ $(document).ready(function(){
   $("#frameToolsButton").click(showFrameTools); $("#selectionToolsButton").click(showSelectionTools);
   $("#userToolsButton").click(showUserTools);
   $("#backgroundColor").click(setBackgroundColor);
+  $("#copyButton").click(copyToClipboard);
   appInitialization();
   prepLoadedDisplay();
 });
@@ -45,6 +46,11 @@ function appInitialization(){
   $("#unlockButton").hide();
   $("#frameContentLock").hide();
   $("#frameContentResizeLock").hide();
+};
+
+function copyToClipboard(){
+  $("#deliciousReduction").select();
+  document.execCommand('copy');
 };
 
 function showFrameTools(){
@@ -270,7 +276,7 @@ function generateHTML(){
     var secondRender = replaceAll(firstRender, '<', '&lt;');
     $("#deliciousReduction").append(secondRender);
   } catch(e) {
-    var reduction ='<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body><div id="container">'+$("#container")[0].innerHTML+'</div></body></html>';
+    var reduction ='<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body style="background-color: '+document.body.style.backgroundColor+';"><div id="container">'+$("#container")[0].innerHTML+'</div></body></html>';
     var firstRender = replaceAll(reduction, '>', '&gt;');
     var secondRender = replaceAll(firstRender, '<', '&lt;');
     $("#deliciousReduction").append(secondRender);
