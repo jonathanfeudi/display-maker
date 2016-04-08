@@ -80,4 +80,4 @@ test:
 #
 production:
   <<: *default
-  url: <%= postgres://ykjbimdanhnncy:uwTpk7kfiOoVsucQZ7xwLfs17J@ec2-54-163-254-148.compute-1.amazonaws.com:5432/dd60dpd1vb1rrs %>
+  url: <%= ENV['HEROKU_POSTGRESQL_IVORY_URL'] %>
