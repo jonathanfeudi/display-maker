@@ -74,6 +74,7 @@ function saveDisplay(){
 
 function prepLoadedDisplay(){
   createBottomMargin();
+  document.body.style.backgroundColor = $("#display_background_color").val();
   for(var i = 0; i < $(".frame").length; i++){
     $("#frameSelect").append("<option id=option"+$(".frame")[i].id.split("frame")[1]+" value="+$(".frame")[i].id.split("frame")[1]+">Frame "+(frameCount+1)+"</option>");
     var frameNumber = $("#frameSelect").children()[i].value;
@@ -83,10 +84,9 @@ function prepLoadedDisplay(){
     $("#frame"+frameNumber).resizable();
     //eww
     frameCount++;
-  }
-  for (var i = 0; i < $("#frameSelect").children().length; i++){
-    $("#frameSelect").children()[i].text = $("#frameNames").text().split(',')[i+1].split($("#frameSelect").children()[i].value)[1];
-  }
+  };
+  var y = $("#display_frame_names").val().split(',');
+  $("#frameSelect").children().each(function(ind,el){for(var i = 0; i < y.length; i++){if (y[i].includes(el.value)){el.text=y[i].split(el.value)[1]}}});
 };
 
 function roundOff(position, grid){
@@ -132,7 +132,8 @@ function setBorderColor(ind, el){
 };
 
 function setBackgroundColor(){
-  $("body").attr("style", "background-color: #"+$("#backgroundColorInput").val());
+  document.body.style.backgroundColor = "#"+$("#backgroundColorInput").val();
+  $("#display_background_color").val("#"+$("#backgroundColorInput").val());
 };
 
 function vacuumPack(){
@@ -141,6 +142,7 @@ function vacuumPack(){
 };
 
 function trimHTML(){
+  document.body.style.minHeight = '';
   $(".frame").removeClass("selectedFrame");
   $(".frame").draggable("destroy");
   $(".frame").resizable("destroy");
@@ -159,8 +161,12 @@ function loadImage(){
 
 function nameFrame(){
   $("#option"+$("#frameSelect").val()).text($("#frameName").val());
-  var value = $("#display_frame_names").val();
-  $("#display_frame_names").val(value+","+$("#frameSelect").val()+$("#frameName").val());
+  $("#display_frame_names").val().split(',').map(function(el, ind){
+    var splitArray = $("#display_frame_names").val().split(','); if(el.includes($("#frameSelect").val())){
+      splitArray.splice(ind, 1, $("#frameSelect").val()+$("#frameName").val()); $("#display_frame_names").val(splitArray.join(','))
+    }
+  });
+  $("#frameName").val('');
 };
 
 function enableContentResize(){
@@ -266,7 +272,7 @@ function generateHTML(){
 //Weird viewport stuff starts here
 
 function createBottomMargin(){
-  $("body").attr("style", "min-height: "+(findFrameBottomLocations()+100)+"px");
+  document.body.style.minHeight = (findFrameBottomLocations()+100)+"px";
 };
 
 function findFrameBottomLocations(){

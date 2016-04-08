@@ -52,8 +52,10 @@
     <input type="text" id="imgInput" placeholder="Image URL">
     <button id="loadImage">Add Image to Frame</button>
     <br>
+    <input type="text" id="linkInput" placeholder="URL">
+    <button id="linkFrame">Add Hyperlink to Frame</button>
+    <br>
     <button id="deleteFrame">Delete Selected Frame</button>
-    <p id="frameNames" hidden><%= @display.frame_names %></p>
   </div>
   <div id="userTools">
     <div class="form">
@@ -63,7 +65,8 @@
       <%= f.text_field :display_name %>
       <%= f.hidden_field(:user_id, :value => session[:current_user_id]) %>
       <%= f.hidden_field(:html_string) %>
-      <%= f.hidden_field(:frame_names) %>
+      <%= f.hidden_field(:background_color, :value => @display.background_color) %>
+      <%= f.hidden_field(:frame_names, :value => @display.frame_names) %>
       <button id="formSubmit">Save Display</button>
       <% end %>
       <br>

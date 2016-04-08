@@ -20736,3 +20736,559 @@ Processing by DisplaysController#show as HTML
   [1m[36mDisplay Load (0.9ms)[0m  [1mSELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1[0m  [["id", 1]]
   Rendered displays/show.html.erb within layouts/application (29.0ms)
 Completed 200 OK in 467ms (Views: 416.2ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 11:37:24 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mDisplay Load (0.4ms)[0m  [1mSELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 534ms (Views: 497.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/assets/script.self-6ff1379d691478f7c6d132acfdfbc787b94473029c999291be07011dd1b6dfac.js?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/assets/script.self-6ff1379d691478f7c6d132acfdfbc787b94473029c999291be07011dd1b6dfac.js?body=1" for ::1 at 2016-04-08 11:37:25 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 11:38:03 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mDisplay Load (0.3ms)[0m  [1mSELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 140ms (Views: 137.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 11:38:03 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 11:38:03 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 11:38:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 11:38:03 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 11:38:03 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 11:38:03 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 11:38:03 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 11:38:03 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 11:38:03 -0400
+
+
+Started GET "/assets/script.self-a78e7b0e327891a6173e157251e9370c57eaf0fd36bb76204c350aef82c3b1fe.js?body=1" for ::1 at 2016-04-08 11:38:03 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:17:05 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mDisplay Load (0.2ms)[0m  [1mSELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 179ms (Views: 177.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 12:17:06 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 12:17:06 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 12:17:06 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 12:17:06 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 12:17:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:17:06 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:17:06 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:17:06 -0400
+
+
+Started GET "/assets/script.self-4e3d25f3129928bc755eb99dbb81d1ce01ad753d1b15f38678e4eeafbbf7b323.js?body=1" for ::1 at 2016-04-08 12:17:06 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:17:06 -0400
+
+
+Started PATCH "/displays/1" for ::1 at 2016-04-08 12:17:33 -0400
+Processing by DisplaysController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HBVEIBJfTmerfCt/9NVIXtG5GPAQAJDupXdJSTz75fjsxM53jsOv0YysgYcf9L2QQmM9Vmt6jaebZ2jaPNNf4w==", "display"=>{"display_name"=>"Samurai", "user_id"=>"1", "html_string"=>"<div id=\"container\">\r\n<div id=\"frame0\" style=\"height: 600px; width: 478px; left: 57px; top: 149px;\" class=\"frame ui-draggable ui-draggable-handle ui-resizable\"><div class=\"frameContent\"><img id=\"frameImage0\" src=\"http://28.media.tumblr.com/tumblr_loydu1dbgV1qflml3o1_500.jpg\"></div><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90;\"></div></div><div id=\"frame2\" style=\"height: 315px; width: 500px; left: 640px; top: 472px;\" class=\"frame ui-draggable ui-draggable-handle ui-resizable\"><div class=\"frameContent\"><img id=\"frameImage2\" src=\"http://24.media.tumblr.com/tumblr_liy2n7b0bq1qzfye6o1_500.jpg\"></div><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90;\"></div></div></div>", "frame_names"=>",0sam,2boat"}, "id"=>"1"}
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  UPDATE "displays" SET "frame_names" = $1 WHERE "displays"."id" = $2  [["frame_names", ",0sam,2boat"], ["id", 1]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/displays/1
+Completed 302 Found in 9ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:17:33 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mDisplay Load (0.3ms)[0m  [1mSELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:18:28 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mDisplay Load (0.2ms)[0m  [1mSELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 12:18:28 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 12:18:28 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 12:18:28 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 12:18:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 12:18:28 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:18:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:18:28 -0400
+
+
+Started GET "/assets/script.self-4e3d25f3129928bc755eb99dbb81d1ce01ad753d1b15f38678e4eeafbbf7b323.js?body=1" for ::1 at 2016-04-08 12:18:28 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:18:28 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:18:28 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-08 12:19:03 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+  [1m[36mDisplay Load (1.8ms)[0m  [1mSELECT  "displays".* FROM "displays"  ORDER BY "displays"."id" ASC LIMIT 1[0m
+
+
+Started GET "/displays" for ::1 at 2016-04-08 12:23:14 -0400
+Processing by DisplaysController#index as HTML
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:23:15 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:31:15 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.6ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:33:55 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 148ms (Views: 146.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 12:33:55 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 12:33:55 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 12:33:55 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 12:33:55 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 12:33:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:33:55 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:33:55 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:33:55 -0400
+
+
+Started GET "/assets/script.self-9d7d6dfe5eade0db65a93baa40ea768591fed0dc5939a56d1796c87346c88136.js?body=1" for ::1 at 2016-04-08 12:33:55 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:33:55 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:34:52 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 138ms (Views: 136.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 12:34:52 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 12:34:52 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 12:34:52 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 12:34:52 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 12:34:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:34:52 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:34:52 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:34:52 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:34:52 -0400
+
+
+Started GET "/assets/script.self-ef4cacc1cd1cb526c0833e77d4fbdd364702b581eca8f10d6d2703d389003bc4.js?body=1" for ::1 at 2016-04-08 12:34:52 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:35:41 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 143ms (Views: 141.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/script.self-d19bcb93381a9ef17680e347cf7978132436d854e2841ce72b6910cec35b48c4.js?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/assets/script.self-d19bcb93381a9ef17680e347cf7978132436d854e2841ce72b6910cec35b48c4.js?body=1" for ::1 at 2016-04-08 12:35:42 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:36:28 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 140ms (Views: 137.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 12:36:28 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 12:36:28 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 12:36:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:36:28 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 12:36:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 12:36:28 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:36:28 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:36:28 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:36:28 -0400
+
+
+Started GET "/assets/script.self-c47b3417a19d08deac28fde3e4c5c3ad137ab5183dac1c97c32bf360ec9ac0d2.js?body=1" for ::1 at 2016-04-08 12:36:28 -0400
+
+
+Started PATCH "/displays/1" for ::1 at 2016-04-08 12:36:39 -0400
+Processing by DisplaysController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Qn+fPJDoQ5/G9PKGqW9u05NSiw1dZDUVH7O36TCrv4R2HQrbt9AuFjLeTLxhEh13Zdvik4PjZ1qbu9MpOoU5Q==", "display"=>{"display_name"=>"Samurai", "user_id"=>"1", "html_string"=>"<div id=\"container\">\r\n<div id=\"frame0\" style=\"height: 600px; width: 478px; left: 57px; top: 149px;\" class=\"frame ui-draggable ui-draggable-handle ui-resizable\"><div class=\"frameContent\"><img id=\"frameImage0\" src=\"http://28.media.tumblr.com/tumblr_loydu1dbgV1qflml3o1_500.jpg\"></div><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90;\"></div></div><div id=\"frame2\" style=\"height: 315px; width: 500px; left: 640px; top: 472px;\" class=\"frame ui-draggable ui-draggable-handle ui-resizable\"><div class=\"frameContent\"><img id=\"frameImage2\" src=\"http://24.media.tumblr.com/tumblr_liy2n7b0bq1qzfye6o1_500.jpg\"></div><div class=\"ui-resizable-handle ui-resizable-e\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-s\" style=\"z-index: 90;\"></div><div class=\"ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se\" style=\"z-index: 90;\"></div></div></div>", "background_color"=>"#3746AB", "frame_names"=>",0sam,2boat"}, "id"=>"1"}
+  [1m[36mDisplay Load (0.2ms)[0m  [1mSELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "displays" SET "background_color" = $1 WHERE "displays"."id" = $2[0m  [["background_color", "#3746AB"], ["id", 1]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/displays/1
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:36:39 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:37:49 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 141ms (Views: 139.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 12:37:49 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 12:37:49 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 12:37:49 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:37:49 -0400
+
+
+Started GET "/assets/script.self-ed32b0252be4cd0a43a5fbf608315020a00afd70cd0202bba768105f2a505895.js?body=1" for ::1 at 2016-04-08 12:37:49 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 12:37:49 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:37:49 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 12:37:49 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:37:49 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:37:49 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:50:11 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 145ms (Views: 143.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 12:50:11 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 12:50:11 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 12:50:11 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 12:50:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:50:11 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 12:50:11 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:50:11 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:50:11 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:50:11 -0400
+
+
+Started GET "/assets/script.self-482a145f52e4b322e36d44c4767bc92666a79f6d2ad0268cfab2777f2e50fab3.js?body=1" for ::1 at 2016-04-08 12:50:11 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:54:06 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 151ms (Views: 149.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 12:54:06 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 12:54:06 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 12:54:06 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 12:54:06 -0400
+
+
+Started GET "/assets/script.self-914a32d5b61598ff7017d0ef43f3733c33f04a60696fcc35ea1ff628ad269a46.js?body=1" for ::1 at 2016-04-08 12:54:06 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 12:54:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:54:06 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:54:06 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:54:06 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:54:06 -0400
+
+
+Started GET "/displays/1" for ::1 at 2016-04-08 12:56:13 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-08 12:56:13 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-08 12:56:13 -0400
+
+
+Started GET "/assets/style.self-10652767c421bf8947c34af2722bc3667390d46e5af4720bb6e2bb465ac69200.css?body=1" for ::1 at 2016-04-08 12:56:13 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-08 12:56:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-08 12:56:13 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-08 12:56:13 -0400
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-08 12:56:13 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-08 12:56:13 -0400
+
+
+Started GET "/assets/script.self-914a32d5b61598ff7017d0ef43f3733c33f04a60696fcc35ea1ff628ad269a46.js?body=1" for ::1 at 2016-04-08 12:56:13 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-08 12:56:13 -0400
