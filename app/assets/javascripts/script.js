@@ -159,6 +159,14 @@ function loadImage(){
   }
 };
 
+function addLinkToFrame(){
+  if ($("#frame"+$("#frameSelect").val()).hasClass("linked")){
+
+  } else {
+    $("#frame"+$("#frameSelect").val()).wrap("<a href="+$("#linkInput").val()+"></a>");
+  }
+};
+
 function nameFrame(){
   $("#option"+$("#frameSelect").val()).text($("#frameName").val());
   $("#display_frame_names").val().split(',').map(function(el, ind){
