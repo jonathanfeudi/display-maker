@@ -15,10 +15,17 @@ body{
   border-style: solid;
   border-width: 3px;
   border-color: gray;
+  margin-top: 20px;
+}
+
+.login{
+  text-align: center;
 }
 
 #top{
+  background-color: #B5D7E6;
   position: relative;
+  text-align: center;
 }
 
 #displayName{
@@ -33,6 +40,7 @@ button{
 }
 
 #controlPanel{
+  min-width: 315px;
   position: fixed;
   z-index: 1;
   border-width: 2px;

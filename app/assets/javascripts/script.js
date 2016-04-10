@@ -48,7 +48,8 @@ function replaceAll(str, find, replace){
 function appInitialization(){
   showFrameTools();
   $("#controlPanel").draggable();
-  $("#controlPanel").attr("style", "left: 450px; top: 100px;")
+  $("#controlPanel").prop("style").left = ($("#top").width() - $("#controlPanel").width()) + "px";
+  $("#controlPanel").prop("style").top = "100px";
   $("#unlockButton").hide();
   $("#frameResize").hide();
   $("#frameContentLock").hide();
