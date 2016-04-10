@@ -36,7 +36,7 @@ var frameContentResizeLocked;
 var borderWidthInitialized;
 var borderColorInitialized;
 var backgroundColorInitialized;
-var lockProportions;
+var lockProportions = false;
 var noFrames = true;
 
 //http://stackoverflow.com/questions/1144783/replacing-all-occurrences-of-a-string-in-javascript
@@ -93,6 +93,8 @@ function saveDisplay(){
 function prepLoadedDisplay(){
   if ($(".frame").length > 0){
     noFrames = false;
+  } else {
+    $("#container").prop("style").minHeight = "500px";
   };
   createBottomMargin();
   $("#container").prop("style").backgroundColor = $("#display_background_color").val();
@@ -122,6 +124,7 @@ function roundOff(position, grid){
 
 function constrainProportions(){
   $("#container").prop("style").height = ($("#displayHeight").val()+"px");
+  $("#container").prop("style").minHeight = '';
   $("#container").prop("style").width = ($("#displayWidth").val()+"px");
   $("#displayWidth").val('');
   $("#displayHeight").val('');
@@ -385,7 +388,7 @@ function generateHTML(){
 //Weird viewport stuff starts here
 
 function createBottomMargin(){
-  if (lockProportions ==false){
+  if (lockProportions == false){
     document.getElementById("container").style.minHeight = (findFrameBottomLocations()-100)+"px";
   };
 };

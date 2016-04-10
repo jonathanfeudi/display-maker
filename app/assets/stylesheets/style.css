@@ -12,6 +12,9 @@ body{
 
 #container {
   position: relative;
+  border-style: solid;
+  border-width: 3px;
+  border-color: gray;
 }
 
 #top{
