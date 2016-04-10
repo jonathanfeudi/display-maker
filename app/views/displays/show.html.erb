@@ -1,4 +1,12 @@
-<h1>Edit Your Display</h1>
+<div id="top">
+  <h1>Edit Your Display</h1>
+  <textarea id="HTMLBox">
+    Your HTML will render here!
+  </textarea>
+  <br>
+  <button id="copyButton">Copy to Clipboard</button>
+  <h2 id="displayName"><%= @display.display_name %></h3>
+</div>
 <div id="controlPanel">
   <div id="controlHeader">
     Control Panel! Drag me!
@@ -7,73 +15,84 @@
     Tabs:
     <button id="frameToolsButton">Frame Tools</button>
     <button id="selectionToolsButton">Selection Tools</button>
-    <button id="userToolsButton">User Tools</button>
+    <button id="displayToolsButton">Display Tools</button>
   </div>
   <div id="frameTools">
-    These actions affect ALL frames.
     <br>
-    <button class="createFrame">Create Frame</button>
+    <button class="createFrame tool">Create Frame</button>
     <br>
-    <button id="unlockButton">Unlock Frames Drag</button>
-    <button id="lockButton">Lock Frames In Place</button>
+    <button id="unlockButton" class="tool">Move Frames</button>
+    <button id="lockButton" class="tool">Lock Frames In Place</button>
+    <label id="frameLockIndicator" for="lockButton">Unlocked</label>
     <br>
-    <button id="frameContentDrag">Unlock Image Drag</button>
-    <button id="frameContentLock">Lock Image Drag</button>
+    <button id="frameResize" class="tool">Enable Frame Resizing</button>
+    <button id="frameResizeLock" class="tool">Lock Frame Sizes</button>
+    <label id="frameResizeLockIndicator" for="frameResizeLock">Unlocked</label>
     <br>
-    <button id="frameContentResize">Enable Image Resize</button>
-    <button id="frameContentResizeLock">Disable Image Resize</button>
+    <button id="frameContentDrag" class="tool">Move Images</button>
+    <button id="frameContentLock" class="tool">Lock Images in Place</button>
+    <label id="imageLockIndicator" for="frameContentLock">Locked</label>
     <br>
-    <input type="number" id="gridInput" placeholder="grid size(pixels)">
-    <button id="gridButton">Enable Snap to Grid</button>
+    <button id="frameContentResize" class="tool">Enable Image Resizing</button>
+    <button id="frameContentResizeLock" class="tool">Disable Image Resizing</button>
+    <label id="imageResizeLockIndicator" for="frameContentResizeLock">Locked</label>
     <br>
-    <input type="number" id="borderWidthInput" placeholder="border width(pixels)">
-    <button id="borderWidth">Set Border Width</button>
+    <input type="number" id="gridInput" placeholder="Grid size(px)" class="tool">
+    <button id="gridButton" class="tool">Enable Snap to Grid</button>
     <br>
-    <input class="jscolor" id="borderColorInput" value="ab2567">
-    <button id="borderColor">Set Border Color</button>
+    <input type="number" id="borderWidthInput" placeholder="border width(px)" class="tool">
+    <button id="borderWidth" class="tool">Set Border Width</button>
     <br>
-    <input class="jscolor" id="backgroundColorInput" value="3746AB">
-    <button id="backgroundColor">Set Background Color</button>
+    <input class="jscolor tool" id="borderColorInput" value="ab2567">
+    <button id="borderColor" class="tool">Set Border Color</button>
+    <br>
+    <input class="jscolor tool" id="backgroundColorInput" value="3746AB">
+    <button id="backgroundColor" class="tool">Set Background Color</button>
   </div>
   <div id="selectionTools">
-    These actions ONLY affect the selected frame.
     <br>
-    <button class="createFrame">Create Frame</button>
+    <button class="createFrame" class="tool">Create Frame</button>
     <br>
     <select id="frameSelect" multiple=true>
     </select>
     <br>
-    <button id="vacuumSeal">Fit Frame to Image</button>
+    <button id="vacuumSeal" class="tool">Fit Frame to Image</button>
     <br>
-    <input type="text" id="frameName" placeholder="Frame Name">
-    <button id="nameFrame">Rename Frame</button>
+    <input type="text" id="frameName" placeholder="Frame Name" class="tool">
+    <button id="nameFrame" class="tool">Rename Frame</button>
     <br>
-    <input type="text" id="imgInput" placeholder="Image URL">
-    <button id="loadImage">Add Image to Frame</button>
+    <input type="text" id="imgInput" placeholder="Image URL" class="tool">
+    <button id="loadImage" class="tool">Add Image to Frame</button>
     <br>
-    <input type="text" id="linkInput" placeholder="URL">
-    <button id="linkFrame">Add Hyperlink to Frame</button>
+    <input type="text" id="linkInput" placeholder="URL" class="tool">
+    <button id="linkFrame" class="tool">Add Hyperlink to Frame</button>
     <br>
-    <button id="deleteFrame">Delete Selected Frame</button>
+    <button id="deleteFrame" class="tool">Delete Selected Frame</button>
   </div>
-  <div id="userTools">
+  <div id="displayTools">
+    <br>
+    <input type="number" id="displayWidth" placeholder="Width(px)">
+    <input type="number" id="displayHeight" placeholder="Height(px)">
+    <button id="constrainProportions" class="tool">Set Display Size</button>
+    <br>
+    <br>
+    <button id="unlockDisplaySize">Unlock Display Size</button>
+    <div class="tooltip"><%= image_tag "tooltip.png" %>
+      <span class="tooltiptext">Setting the display size will prevent your display from resizing as you drag frames downwards. Use the 'Unlock Display Size' button if you wish to re-enable this feature after setting the display size.</span>
+    </div>
     <div class="form">
       <br>
       <%= form_for @display do |f| %>
-      <%= f.label :display_name %><br>
-      <%= f.text_field :display_name %>
+      <%= f.text_field(:display_name, :placeholder => "Name Your Display") %>
       <%= f.hidden_field(:user_id, :value => session[:current_user_id]) %>
       <%= f.hidden_field(:html_string) %>
       <%= f.hidden_field(:background_color, :value => @display.background_color) %>
       <%= f.hidden_field(:frame_names, :value => @display.frame_names) %>
-      <button id="formSubmit">Save Display</button>
+      <button id="formSubmit" class="tool">Save Display</button>
       <% end %>
       <br>
-      <button id="generateHTML">Generate HTML</button>
+      <button id="generateHTML" class="tool">Generate HTML</button>
     </div>
   </div>
 </div>
 <%= @display.html_string.html_safe %>
-<textarea id="deliciousReduction">
-</textarea>
-<button id="copyButton">Copy to Clipboard</button>

@@ -18,9 +18,13 @@ $(document).ready(function(){
   $("#borderWidth").click(setBorderWidth);
   $("#borderColor").click(setBorderColor);
   $("#frameToolsButton").click(showFrameTools); $("#selectionToolsButton").click(showSelectionTools);
-  $("#userToolsButton").click(showUserTools);
+  $("#displayToolsButton").click(showDisplayTools);
   $("#backgroundColor").click(setBackgroundColor);
   $("#copyButton").click(copyToClipboard);
+  $("#linkFrame").click(addLinkToFrame);
+  $("#frameResize").click(enableFrameResize);
+  $("#frameResizeLock").click(disableFrameResize);
+  $("#constrainProportions").click(constrainProportions);
   appInitialization();
   prepLoadedDisplay();
 });
@@ -32,6 +36,8 @@ var frameContentResizeLocked;
 var borderWidthInitialized;
 var borderColorInitialized;
 var backgroundColorInitialized;
+var lockProportions;
+var noFrames = true;
 
 //http://stackoverflow.com/questions/1144783/replacing-all-occurrences-of-a-string-in-javascript
 
@@ -42,32 +48,38 @@ function replaceAll(str, find, replace){
 function appInitialization(){
   showFrameTools();
   $("#controlPanel").draggable();
-  $("#controlPanel").attr("style", "left: 850px; top: 10px;")
+  $("#controlPanel").attr("style", "left: 450px; top: 100px;")
   $("#unlockButton").hide();
+  $("#frameResize").hide();
   $("#frameContentLock").hide();
   $("#frameContentResizeLock").hide();
 };
 
 function copyToClipboard(){
-  $("#deliciousReduction").select();
-  document.execCommand('copy');
+  try {
+    $("#HTMLBox").select();
+    document.execCommand('copy');
+    window.alert("Copied to clipboard!");
+  } catch(e){
+    window.alert("Copy failed! Please highlight and copy the contents of the text field manually.")
+  }
 };
 
 function showFrameTools(){
   $("#selectionTools").hide();
-  $("#userTools").hide();
+  $("#displayTools").hide();
   $("#frameTools").show();
 };
 
-function showUserTools(){
+function showDisplayTools(){
   $("#selectionTools").hide();
   $("#frameTools").hide();
-  $("#userTools").show();
+  $("#displayTools").show();
 };
 
 function showSelectionTools(){
   $("#selectionTools").show();
-  $("#userTools").hide();
+  $("#displayTools").hide();
   $("#frameTools").hide();
 };
 
@@ -79,8 +91,11 @@ function saveDisplay(){
 };
 
 function prepLoadedDisplay(){
+  if ($(".frame").length > 0){
+    noFrames = false;
+  };
   createBottomMargin();
-  document.body.style.backgroundColor = $("#display_background_color").val();
+  $("#container").prop("style").backgroundColor = $("#display_background_color").val();
   for(var i = 0; i < $(".frame").length; i++){
     $("#frameSelect").append("<option id=option"+$(".frame")[i].id.split("frame")[1]+" value="+$(".frame")[i].id.split("frame")[1]+">Frame "+(frameCount+1)+"</option>");
     var frameNumber = $("#frameSelect").children()[i].value;
@@ -103,6 +118,14 @@ function roundOff(position, grid){
   } else {
     return afterSnap;
   }
+};
+
+function constrainProportions(){
+  $("#container").prop("style").height = ($("#displayHeight").val()+"px");
+  $("#container").prop("style").width = ($("#displayWidth").val()+"px");
+  $("#displayWidth").val('');
+  $("#displayHeight").val('');
+  lockProportions = true;
 };
 
 function snapToGrid(){
@@ -138,17 +161,19 @@ function setBorderColor(ind, el){
 };
 
 function setBackgroundColor(){
-  document.body.style.backgroundColor = "#"+$("#backgroundColorInput").val();
+  document.getElementById("container").style.backgroundColor = "#"+$("#backgroundColorInput").val();
   $("#display_background_color").val("#"+$("#backgroundColorInput").val());
+  backgroundColorInitialized = true;
 };
 
 function vacuumPack(){
   $("#frame"+($("#frameSelect").val())).width($("#frameImage"+($("#frameSelect").val())).width()+"px");
   $("#frame"+($("#frameSelect").val())).height($("#frameImage"+($("#frameSelect").val())).height()+"px");
+  $("#frameSelect").val('');
 };
 
 function trimHTML(){
-  document.body.style.minHeight = '';
+  // document.body.style.minHeight = '';
   $(".frame").removeClass("selectedFrame");
   $(".frame").draggable("destroy");
   $(".frame").resizable("destroy");
@@ -160,27 +185,45 @@ function loadImage(){
   if ($("#frameSelect").val()){
     $("#frame"+($("#frameSelect").val())).append("<div class=frameContent><img id=frameImage"+($("#frameSelect").val())+" src="+($("#imgInput").val())+"></div>")
     $("#imgInput").val('');
+    $("#frameSelect").val('');
   } else {
-    window.alert("You must select a frame to place your image inside.")
+    window.alert("You must select a frame to place your image inside.");
   }
 };
 
 function addLinkToFrame(){
-  if ($("#frame"+$("#frameSelect").val()).hasClass("linked")){
-
+  if ($("#frameSelect").val()){
+    if ($("#frame"+$("#frameSelect").val()).hasClass("linked")){
+      $("#frame"+$("#frameSelect").val()).parent().attr("href", $("#linkInput").val());
+      $("#frameSelect").val('');
+      $(".frame").removeClass("selectedFrame");
+      $("#linkInput").val('');
+    } else {
+      $("#frame"+$("#frameSelect").val()).wrap("<a href="+$("#linkInput").val()+"></a>");
+      $("#frame"+$("#frameSelect").val()).addClass("linked");
+      $("#frameSelect").val('');
+      $(".frame").removeClass("selectedFrame");
+      $("#linkInput").val('');
+    }
   } else {
-    $("#frame"+$("#frameSelect").val()).wrap("<a href="+$("#linkInput").val()+"></a>");
+    window.alert("You must select a frame to add a hyperlink.")
   }
 };
 
 function nameFrame(){
-  $("#option"+$("#frameSelect").val()).text($("#frameName").val());
-  $("#display_frame_names").val().split(',').map(function(el, ind){
-    var splitArray = $("#display_frame_names").val().split(','); if(el.includes($("#frameSelect").val())){
-      splitArray.splice(ind, 1, $("#frameSelect").val()+$("#frameName").val()); $("#display_frame_names").val(splitArray.join(','))
-    }
-  });
-  $("#frameName").val('');
+  if ($("#frameSelect").val()){
+    $("#option"+$("#frameSelect").val()).text($("#frameName").val());
+    $("#display_frame_names").val().split(',').map(function(el, ind){
+      var splitArray = $("#display_frame_names").val().split(','); if(el.includes($("#frameSelect").val())){
+        splitArray.splice(ind, 1, $("#frameSelect").val()+$("#frameName").val()); $("#display_frame_names").val(splitArray.join(','))
+      }
+    });
+    $("#frameName").val('');
+    $("#frameSelect").val('');
+    $(".frame").removeClass("selectedFrame");
+  } else {
+    window.alert("You must select a frame to rename.")
+  }
 };
 
 function enableContentResize(){
@@ -189,13 +232,15 @@ function enableContentResize(){
     $("#frameContentResize").hide();
     $("#frameContentResizeLock").show();
     $(".frameContent").children(["<img>"]).resizable("enable")
+    $("#imageResizeLockIndicator").text("Unlocked");
   } else {
     frameContentResizeLocked = false;
     $("#frameContentResize").hide();
     $("#frameContentResizeLock").show();
     $(".frameContent").children(["<img>"]).resizable({
       aspectRatio:true
-    })
+    });
+    $("#imageResizeLockIndicator").text("Unlocked");
   }
 };
 
@@ -206,7 +251,8 @@ function disableContentResize(){
     $("#frameContentResizeLock").hide();
     $(".frameContent").children(["<img>"]).resizable({
       disabled:true
-    })
+    });
+    $("#imageResizeLockIndicator").text("Locked");
   }
 };
 
@@ -216,11 +262,13 @@ function enableContentDrag(){
     $(".frameContent").draggable("enable");
     $("#frameContentDrag").hide();
     $("#frameContentLock").show();
+    $("#imageLockIndicator").text("Unlocked");
   } else {
     frameContentDragLocked = false;
     $(".frameContent").draggable();
     $("#frameContentDrag").hide();
     $("#frameContentLock").show();
+    $("#imageLockIndicator").text("Unlocked");
   }
 };
 
@@ -231,15 +279,24 @@ function disableContentDrag(){
     $("#frameContentDrag").show();
     $(".frameContent").draggable({
       disabled:true
-    })
+    });
+    $("#imageLockIndicator").text("Locked");
   }
 };
 
 function createFrame(){
-  $("#container").append("<div id=frame"+(parseInt($("#frameSelect").children().last().val())+1)+" style=height:100px;width:100px; class=frame></div>");
-  $("#frame"+(parseInt($("#frameSelect").children().last().val())+1)).draggable();
-  $("#frame"+(parseInt($("#frameSelect").children().last().val())+1)).resizable();
-  $("#frameSelect").append("<option id=option"+(parseInt($("#frameSelect").children().last().val())+1)+" value="+(parseInt($("#frameSelect").children().last().val())+1)+">Frame "+(frameCount+1)+"</option>");
+  if (noFrames){
+    $("#container").append("<div id=frame0 style=height:100px;width:100px; class=frame></div>");
+    noFrames = false;
+    $("#frame0").draggable({drag:function(event, ui){createBottomMargin()}});
+    $("#frame0").resizable();
+    $("#frameSelect").append("<option id=option0 value=0>Frame "+(frameCount+1)+"</option>");
+  } else{
+    $("#container").append("<div id=frame"+(parseInt($("#frameSelect").children().last().val())+1)+" style=height:100px;width:100px; class=frame></div>");
+    $("#frame"+(parseInt($("#frameSelect").children().last().val())+1)).draggable({drag:function(event, ui){createBottomMargin()}});
+    $("#frame"+(parseInt($("#frameSelect").children().last().val())+1)).resizable();
+    $("#frameSelect").append("<option id=option"+(parseInt($("#frameSelect").children().last().val())+1)+" value="+(parseInt($("#frameSelect").children().last().val())+1)+">Frame "+(frameCount+1)+"</option>");
+  };
   frameCount++;
 };
 
@@ -257,36 +314,80 @@ function enableFrameDrag(){
   $(".frame").draggable("enable");
   $("#unlockButton").hide();
   $("#lockButton").show();
+  $("#frameLockIndicator").text("Unlocked");
 };
 
 
 function disableFrameDrag(){
   $("#unlockButton").show();
-  $("#lockButton").hide()
+  $("#lockButton").hide();
   $(".frame").draggable({
     disabled: true
   });
+  $("#frameLockIndicator").text("Locked");
+};
+
+function enableFrameResize(){
+  $(".frame").resizable("enable");
+  $("#frameResizeLock").show();
+  $("#frameResize").hide();
+  $("#frameResizeLockIndicator").text("Unlocked");
+};
+
+function disableFrameResize(){
+  $(".frame").resizable("disable");
+  $("#frameResizeLock").hide();
+  $("#frameResize").show();
+  $("#frameResizeLockIndicator").text("Locked");
 };
 
 function generateHTML(){
   try {
     trimHTML();
-    var reduction =$("#container")[0].innerHTML;
+    $("#container div").removeAttr("id");
+    $(".frameContent").removeAttr("class");
+    $("img").removeAttr("id");
+    var reduction;
+    if (lockProportions && backgroundColorInitialized){
+      reduction = '<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body><div id="container" style="background-color: '+document.getElementById("container").style.backgroundColor+'; height:'+$("#container").prop("style").height+'; width:'+$("#container").prop("style").width+'">'+$("#container")[0].innerHTML+'</div></body></html>';
+    } else if (backgroundColorInitialized){
+      reduction = '<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body><div id="container" style="background-color: '+document.getElementById("container").style.backgroundColor+'; height:'+(parseInt($("#container").prop("style").minHeight) - 250)+'px";>'+$("#container")[0].innerHTML+'</div></body></html>';
+    } else if (lockProportions){
+      reduction = '<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body><div id="container" style="height:'+$("#container").prop("style").height+'; width:'+$("#container").prop("style").width+'">'+$("#container")[0].innerHTML+'</div></body></html>';
+    } else {
+      reduction = '<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body><div id="container" style="height:'+(parseInt($("#container").prop("style").minHeight) - 250)+'px";>'+$("#container")[0].innerHTML+'</div></body></html>';
+    };
     var firstRender = replaceAll(reduction, '>', '&gt;');
     var secondRender = replaceAll(firstRender, '<', '&lt;');
-    $("#deliciousReduction").append(secondRender);
+    $("#HTMLBox").text('');
+    $("#HTMLBox").append(secondRender);
   } catch(e) {
-    var reduction ='<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body style="background-color: '+document.body.style.backgroundColor+';"><div id="container">'+$("#container")[0].innerHTML+'</div></body></html>';
+    $("#container div").removeAttr("id");
+    $(".frameContent").removeAttr("class");
+    $("img").removeAttr("id");
+    var reduction;
+    if (lockProportions && backgroundColorInitialized){
+      reduction = '<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body><div id="container" style="background-color: '+document.getElementById("container").style.backgroundColor+'; height:'+$("#container").prop("style").height+'; width:'+$("#container").prop("style").width+'">'+$("#container")[0].innerHTML+'</div></body></html>';
+    } else if (backgroundColorInitialized){
+      reduction = '<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body><div id="container" style="background-color: '+document.getElementById("container").style.backgroundColor+'; height:'+(parseInt($("#container").prop("style").minHeight) - 250)+'px";>'+$("#container")[0].innerHTML+'</div></body></html>';
+    } else if (lockProportions){
+      reduction = '<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body><div id="container" style="height:'+$("#container").prop("style").height+'; width:'+$("#container").prop("style").width+'">'+$("#container")[0].innerHTML+'</div></body></html>';
+    } else {
+      reduction = '<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><style>#container {position: relative;}.frame {position: absolute;overflow: hidden;}</style></head><body><div id="container" style="height:'+(parseInt($("#container").prop("style").minHeight) - 250)+'px";>'+$("#container")[0].innerHTML+'</div></body></html>';
+    };
     var firstRender = replaceAll(reduction, '>', '&gt;');
     var secondRender = replaceAll(firstRender, '<', '&lt;');
-    $("#deliciousReduction").append(secondRender);
-  }
+    $("#HTMLBox").text('');
+    $("#HTMLBox").append(secondRender);
+  };
 };
 
 //Weird viewport stuff starts here
 
 function createBottomMargin(){
-  document.body.style.minHeight = (findFrameBottomLocations()+100)+"px";
+  if (lockProportions ==false){
+    document.getElementById("container").style.minHeight = (findFrameBottomLocations()-100)+"px";
+  };
 };
 
 function findFrameBottomLocations(){

@@ -1,5 +1,32 @@
+body{
+  font-family: 'Maven Pro', sans-serif;
+}
+
+#displayHeight{
+  width: 70px;
+}
+
+#displayWidth{
+  width: 70px;
+}
+
 #container {
   position: relative;
+}
+
+#top{
+  position: relative;
+}
+
+#displayName{
+  font-style: italic;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+button{
+  height: 25px;
 }
 
 #controlPanel{
@@ -9,6 +36,11 @@
   border-style: solid;
   border-color: black;
   background-color: white;
+}
+
+#HTMLBox {
+  min-width: 400px;
+  min-height: 250px;
 }
 
 .frame {
@@ -27,4 +59,40 @@
 
 #frameSelect{
   width: 75px;
+}
+
+button.tool {
+  width: 145px;
+}
+
+input.tool {
+  width: 145px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip img{
+  position: absolute;
+  top: -17px;
+  width: 30px;
+  height: 25px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    left:105%;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
