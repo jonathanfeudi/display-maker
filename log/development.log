@@ -30962,3 +30962,926 @@ Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac
 
 
 Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 02:20:01 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:41:02 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 130ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/style.self-d09462433e152e65453333985c08bb00371cc81c69cd386bc392c1ac81525c5a.css?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:41:03 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:41:16 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/style.self-c0f112edd4437404812b1c21490cd29ec85c6d743c6bde9dee65c60271f7f6bf.css?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:41:16 -0400
+
+
+Started GET "/displays/help" for ::1 at 2016-04-10 13:43:04 -0400
+Processing by DisplaysController#help as HTML
+  Rendered displays/help.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/displays" for ::1 at 2016-04-10 13:44:47 -0400
+Processing by DisplaysController#index as HTML
+  [1m[36mDisplay Load (0.4ms)[0m  [1mSELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:44:49 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:45:08 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/assets/style.self-c0f112edd4437404812b1c21490cd29ec85c6d743c6bde9dee65c60271f7f6bf.css?body=1" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:45:08 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:46:23 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 13:46:23 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 13:46:23 -0400
+
+
+Started GET "/assets/style.self-c0f112edd4437404812b1c21490cd29ec85c6d743c6bde9dee65c60271f7f6bf.css?body=1" for ::1 at 2016-04-10 13:46:23 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 13:46:23 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 13:46:23 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 13:46:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:46:23 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:46:23 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:46:23 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:46:24 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:46:24 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:46:24 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:50:03 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/style.self-a0b4810cda74da2ca4cfc8082f18a4cd28c23fd828cd87d0537d224280e7eb2d.css?body=1" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:50:03 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:50:40 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/style.self-d33803044b7fc88dd854fdf9beb4d5e50528e9eca38f9db22c2f079bd95e6cc5.css?body=1" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:50:40 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:50:48 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-049fde04f49b12729f4065d9a8bb717f591800e5c86c02e3eec39c30326f7d24.css?body=1" for ::1 at 2016-04-10 13:50:48 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 13:50:48 -0400
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 13:50:48 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:50:48 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 13:50:48 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 13:50:48 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 13:50:48 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:50:48 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:50:48 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:50:48 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:50:49 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:51:01 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/assets/style.self-b4a2c2916f844bd5a6099fabda9d9a427ad26c51cbce6939d81719f337312285.css?body=1" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:51:01 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:52:13 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 13:52:13 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 13:52:13 -0400
+
+
+Started GET "/assets/style.self-a6cf16df4965311d0776abddd6935302d653e592d943d75d42395941d5d5d472.css?body=1" for ::1 at 2016-04-10 13:52:13 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 13:52:13 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 13:52:13 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 13:52:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:52:13 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:52:13 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:52:13 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:52:13 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:52:14 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:52:14 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 13:52:23 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/assets/style.self-1e4f36d4764b33c5d7c4a85667e60c2ae1f47128c317a840fb9e9946420e7ee7.css?body=1" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 13:52:23 -0400
+
+
+Started GET "/displays" for ::1 at 2016-04-10 14:36:41 -0400
+Processing by DisplaysController#index as HTML
+  [1m[35mDisplay Load (0.1ms)[0m  SELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/displays" for ::1 at 2016-04-10 14:37:41 -0400
+Processing by DisplaysController#index as HTML
+  [1m[36mDisplay Load (0.2ms)[0m  [1mSELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 14:37:42 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 14:37:42 -0400
+
+
+Started GET "/assets/style.self-1e4f36d4764b33c5d7c4a85667e60c2ae1f47128c317a840fb9e9946420e7ee7.css?body=1" for ::1 at 2016-04-10 14:37:42 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 14:37:42 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 14:37:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 14:37:42 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 14:37:42 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 14:37:42 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 14:37:42 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 14:37:42 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 14:37:51 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/displays" for ::1 at 2016-04-10 14:37:52 -0400
+Processing by DisplaysController#index as HTML
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/displays" for ::1 at 2016-04-10 14:38:07 -0400
+Processing by DisplaysController#index as HTML
+  [1m[36mDisplay Load (0.1ms)[0m  [1mSELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 14:38:07 -0400
+
+
+Started GET "/assets/style.self-1e4f36d4764b33c5d7c4a85667e60c2ae1f47128c317a840fb9e9946420e7ee7.css?body=1" for ::1 at 2016-04-10 14:38:07 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 14:38:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 14:38:07 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 14:38:07 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 14:38:07 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 14:38:07 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 14:38:07 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 14:38:07 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 14:38:07 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 14:38:54 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.self-835740464528ae660b5e71b05f0378f8cab8427e9dead0e200c7bc8401bc3c50.css?body=1" for ::1 at 2016-04-10 14:38:55 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 14:38:56 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/assets/style.self-835740464528ae660b5e71b05f0378f8cab8427e9dead0e200c7bc8401bc3c50.css?body=1" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 14:38:56 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 14:39:00 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/style.self-835740464528ae660b5e71b05f0378f8cab8427e9dead0e200c7bc8401bc3c50.css?body=1" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/script.self-f928ce2fac29ebdb3846fd624a1bb8c75b0b5efb1285d6940535efbb491481e0.js?body=1" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 14:39:01 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 14:39:23 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 142ms (Views: 141.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/assets/style.self-835740464528ae660b5e71b05f0378f8cab8427e9dead0e200c7bc8401bc3c50.css?body=1" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/assets/script.self-afa52a62db5fec09b0329e6ea6179642a920d6dfa50b9714ffe23ca7769370a6.js?body=1" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 14:39:24 -0400
+
+
+Started GET "/displays" for ::1 at 2016-04-10 14:40:27 -0400
+Processing by DisplaysController#index as HTML
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.self-69f771fb63c474be58df4e7e1ee5e22b35b1850d78367c8760ec1adde575925f.css?body=1" for ::1 at 2016-04-10 14:40:27 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 14:40:30 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/displays" for ::1 at 2016-04-10 14:40:33 -0400
+Processing by DisplaysController#index as HTML
+  [1m[36mDisplay Load (0.4ms)[0m  [1mSELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 14:40:34 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/displays" for ::1 at 2016-04-10 14:40:44 -0400
+Processing by DisplaysController#index as HTML
+  [1m[35mDisplay Load (0.2ms)[0m  SELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 14:40:54 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/displays" for ::1 at 2016-04-10 14:40:55 -0400
+Processing by DisplaysController#index as HTML
+  [1m[36mDisplay Load (0.2ms)[0m  [1mSELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/displays/1" for ::1 at 2016-04-10 14:40:56 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mDisplay Load (0.1ms)[0m  [1mSELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/displays/1" for ::1 at 2016-04-10 14:46:08 -0400
+Processing by DisplaysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mDisplay Load (0.2ms)[0m  [1mSELECT  "displays".* FROM "displays" WHERE "displays"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered displays/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/assets/style.self-69f771fb63c474be58df4e7e1ee5e22b35b1850d78367c8760ec1adde575925f.css?body=1" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/assets/script.self-afa52a62db5fec09b0329e6ea6179642a920d6dfa50b9714ffe23ca7769370a6.js?body=1" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 14:46:09 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 14:46:15 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 20:08:31 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 81ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/assets/style.self-69f771fb63c474be58df4e7e1ee5e22b35b1850d78367c8760ec1adde575925f.css?body=1" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/assets/script.self-afa52a62db5fec09b0329e6ea6179642a920d6dfa50b9714ffe23ca7769370a6.js?body=1" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 20:08:31 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 20:08:42 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-10 20:08:52 -0400
+Processing by DisplaysController#index as HTML
+  [1m[35mDisplay Load (0.4ms)[0m  SELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-10 20:09:04 -0400
+Processing by DisplaysController#index as HTML
+  [1m[36mDisplay Load (0.2ms)[0m  [1mSELECT "displays".* FROM "displays" WHERE "displays"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered displays/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 20:09:14 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 20:10:52 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/assets/style.self-69f771fb63c474be58df4e7e1ee5e22b35b1850d78367c8760ec1adde575925f.css?body=1" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/assets/script.self-afa52a62db5fec09b0329e6ea6179642a920d6dfa50b9714ffe23ca7769370a6.js?body=1" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 20:10:52 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 20:27:40 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.self-260d1cd473f95680e58cd49a52acff7a312116c3549d91c3e8a287d795cc5425.css?body=1" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/assets/style.self-69f771fb63c474be58df4e7e1ee5e22b35b1850d78367c8760ec1adde575925f.css?body=1" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/assets/jquery-ui.structure.self-65dc3d01fb802f30a305e6c5f1d62a540c2260444e7df7eb299d46079ec2a205.css?body=1" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/assets/jquery-ui.self-6b94909f89fb515a449d5c88cd03396d0a22ea3f6fa3ef97560f45331c2e9458.js?body=1" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/assets/jscolor.self-dea1fb69e374a78301bbdc08f164d35a8887ea3d223419bb2c9d70b8cb41809d.js?body=1" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/assets/script.self-afa52a62db5fec09b0329e6ea6179642a920d6dfa50b9714ffe23ca7769370a6.js?body=1" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/assets/tooltip-da8acef355f90fdaddbc5abe65556929fa17ccb93d6fe2ee6d852b5b99a0e369.png" for ::1 at 2016-04-10 20:27:40 -0400
+
+
+Started GET "/displays/new" for ::1 at 2016-04-10 20:28:36 -0400
+Processing by DisplaysController#new as HTML
+  Rendered displays/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)

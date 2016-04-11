@@ -1,4 +1,4 @@
-<div id="top">
+<div class="top">
   <h1>Create Your Display</h1>
   <textarea id="HTMLBox">
     Your HTML will render here!
@@ -20,21 +20,36 @@
     These actions affect ALL frames.
     <br>
     <button class="createFrame tool">Create Frame</button>
+    <div class="tooltip"><%= image_tag "tooltip.png" %>
+      <span class="tooltiptext">Creates a container for an image. The frame is draggable and resizable.</span>
+    </div>
     <br>
     <button id="unlockButton" class="tool">Move Frames</button>
     <button id="lockButton" class="tool">Lock Frames In Place</button>
+    <div class="tooltip"><%= image_tag "tooltip.png" %>
+      <span class="tooltiptext">Use this to lock your frames in place, preventing them from being dragged with the mouse. Move Frames re-enables frame dragging.</span>
+    </div>
     <label id="frameLockIndicator" for="lockButton">Unlocked</label>
     <br>
     <button id="frameResize" class="tool">Enable Frame Resizing</button>
     <button id="frameResizeLock" class="tool">Lock Frame Sizes</button>
+    <div class="tooltip"><%= image_tag "tooltip.png" %>
+      <span class="tooltiptext">Enables frame resizing/locks frame sizes. Resize frames by grabbing the right, bottom, or bottom-right corner.</span>
+    </div>
     <label id="frameResizeLockIndicator" for="frameResizeLock">Unlocked</label>
     <br>
     <button id="frameContentDrag" class="tool">Move Images</button>
     <button id="frameContentLock" class="tool">Lock Images in Place</button>
+    <div class="tooltip"><%= image_tag "tooltip.png" %>
+      <span class="tooltiptext">Use this to lock the images inside your frames in place, preventing them from being dragged with the mouse. Move Images re-enables image dragging.</span>
+    </div>
     <label id="imageLockIndicator" for="frameContentLock">Locked</label>
     <br>
     <button id="frameContentResize" class="tool">Enable Image Resizing</button>
     <button id="frameContentResizeLock" class="tool">Disable Image Resizing</button>
+    <div class="tooltip"><%= image_tag "tooltip.png" %>
+      <span class="tooltiptext">Enables image resizing/locks image sizes. Resize images by grabbing the right, bottom, or bottom-right corner.</span>
+    </div>
     <label id="imageResizeLockIndicator" for="frameContentResizeLock">Locked</label>
     <br>
     <input type="number" id="gridInput" placeholder="Grid size(px)" class="tool">

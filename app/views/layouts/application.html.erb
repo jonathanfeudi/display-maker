@@ -12,12 +12,10 @@
     <% if session[:current_user_id] %>
     <%= link_to "Logout", sessions_path, method: :delete %> ||
     <%= link_to "My Displays", displays_path %> ||
-    <%= link_to "Create a New Display", new_display_path %> ||
-    <%= link_to "Help", displays_help_path %>
+    <%= link_to "Create a New Display", new_display_path %>
     <% else %>
     <%= link_to "Register/Login", new_user_path %> ||
-    <%= link_to "Create a New Display", new_display_path %> ||
-    <%= link_to "Help", displays_help_path %>
+    <%= link_to "Create a New Display", new_display_path %>
     <% end %>
   </div>
 <%= yield %>
