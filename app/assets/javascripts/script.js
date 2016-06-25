@@ -187,7 +187,7 @@ function trimHTML(){
 
 function loadImage(){
   if ($("#frameSelect").val()){
-    $("#frame"+($("#frameSelect").val())).append("<div class=frameContent><img id=frameImage"+($("#frameSelect").val())+" src="+($("#imgInput").val())+"></div>")
+    $("#frame"+($("#frameSelect").val())).append("<div class=frameContent><img id=frameImage"+($("#frameSelect").val())+" src="+($("#imgInput").val())+"></div>");
     $("#imgInput").val('');
     $("#frameSelect").val('');
   } else {
